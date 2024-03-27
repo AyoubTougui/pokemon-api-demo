@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 5rem auto;
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    .search {
+      margin-right: -14rem;
+      margin-top: -4rem;
+      svg {
+        height: 6rem;
+      }
+    }
+    .db {
+      opacity: 0.8;
+      svg {
+        height: 10rem;
+      }
+    }
+  }
+  p {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}

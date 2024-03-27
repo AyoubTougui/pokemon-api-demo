@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+.left {
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 1rem;
+    svg {
+      height: 2rem;
+      transition: 0.5s linear;
+      margin-right: 0.25px;
+    }
+    &:hover {
+      svg {
+        transform: rotate(180deg);
+      }
+      color: #3c5aa6;
+    }
+  }
+}
+.right {
+  display: flex;
+  align-items: center;
+  svg {
+    height: 1rem;
+    margin-right: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+  }
+  .left {
+    margin-bottom: 1rem;
+  }
+}
